@@ -1,0 +1,72 @@
+<!DOCTYPEhtml>
+  <head>
+   <title>Tyson J. Woods</title>
+   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+   <script src="javascript.js"></script>
+  </head>
+  <body style="width:100%;">
+  <div style="hight:300px; width:100%;">
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+   </div>
+   <header>
+   <img src = "https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/16665813_1340567046003870_3665436834606919924_o.jpg?efg=eyJpIjoiYiJ9&oh=14aa566b463e133aa346e172bfc7dc94&oe=594ED75D" alt="Tyson J. Woods" style="width:404px;height:585px;display:inline-block;float:left;">
+   </header>
+   <section style="text-align:center;">
+        <h3>About Me</h3>
+      <p></p>
+   </section> 
+    
+	  <section style="text-align:center;">
+        <h3>My Path</h3>
+        <p>Why I Decided to Learn Programming?</p>
+		<p>I decided to learn programming when I was 17 years old. I was challenged by my mother to take a risk and complete <br />
+		a difficult task without help; something I never thought about doing. Since I could/'t think about anything, I asked my mother to pick.<br />
+		About 2hrs later we started watching the movie Swordfish. Later towards the middle of the movie, my mother noticed how Hugh Jackman was <br />
+		writing code so she chose programming to be my challenge. I went out and brought my first programming book, "C Programming for the Absolute Beginner.<br />
+		As the years went on I later enrolled at Itt-Technical Institute in Duluth, Ga. I made friends who were interested in programming as myself and we agreed<br />
+		to challeng each other. The 15th of March was the day we all graduated and thanked each other for pushing one another.</p>
+      </section>
+	
+ 
+    
+    <article style="text-align:center;">
+      <header>
+        <h3>My Background</h3>
+      </header>
+      <p>I have a background in software development and also familiar with nine other languages. My I.T. background covers <br />
+	  application developmet to web development while gaining knownledge in software security. Since I graduated with my associates degree,<br />
+	  I've completed two internships with Ripple Effect Marketing Group and V-Love Productions.</p>
+    </article>
+    
+    
+
+<div>
+<footer>
+  <a href="index.html"><strong>Home</strong></a>
+  <a href="portfolio.html"><strong>Portfolio</strong></a>
+  <a href="contact.html"><strong>Contact</strong><a href="mailto:Tysonjwoods@hotmail.com"></a></a>
+</footer>
+</div>
+<script>
+function prepareEventHandlers(){
+  document.getElementById("ContactMe").onsubmit=function(){
+    if(document.getElementById("email").value== ""){
+      document.getElementById("errorMessage").innerHTML="Please Enter a valid Email!";
+      return false;
+    }else{document.getElementById("errorMessage").innerHTML=" ";
+    return true;
+  }
+};
+}
+var wordCount = document.getElementsByTagName("P").length;
+
+window.onload=function(){
+  prepareEventHandlers();
+}
+</script>
+  </body>
+</html>
